@@ -1,0 +1,169 @@
+/*======================================================
+ Display Utilities
+ Frontend Kit UnADM
+
+ Description:
+ Utility classes for display and structural visibility.
+
+ Responsibilities:
+ - Display helpers
+ - Visibility helpers
+ - Screen reader helpers
+
+ Dependencies:
+ None
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                    DISPLAY                           =
+======================================================*/
+
+.d-none{
+    display:none;
+}
+
+.d-block{
+    display:block;
+}
+
+.d-inline{
+    display:inline;
+}
+
+.d-inline-block{
+    display:inline-block;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-inline-flex{
+    display:inline-flex;
+}
+
+.d-grid{
+    display:grid;
+}
+
+.d-inline-grid{
+    display:inline-grid;
+}
+
+.d-table{
+    display:table;
+}
+
+.d-table-row{
+    display:table-row;
+}
+
+.d-table-cell{
+    display:table-cell;
+}
+
+.d-contents{
+    display:contents;
+}
+
+
+/*======================================================
+=                  VISIBILITY                          =
+======================================================*/
+
+.visible{
+    visibility:visible;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+
+/*======================================================
+=              SCREEN READER ONLY                      =
+======================================================*/
+
+.sr-only{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    padding:0;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+    border:0;
+
+}
+
+
+/*======================================================
+=          REMOVE SCREEN READER STYLE                  =
+======================================================*/
+
+.not-sr-only{
+
+    position:static;
+
+    width:auto;
+
+    height:auto;
+
+    padding:0;
+
+    margin:0;
+
+    overflow:visible;
+
+    clip:auto;
+
+    white-space:normal;
+
+}
+
+
+/*======================================================
+=              POINTER EVENTS                          =
+======================================================*/
+
+.pointer-events-none{
+    pointer-events:none;
+}
+
+.pointer-events-auto{
+    pointer-events:auto;
+}
+
+
+/*======================================================
+=               USER SELECTION                         =
+======================================================*/
+
+.select-none{
+    user-select:none;
+}
+
+.select-text{
+    user-select:text;
+}
+
+.select-all{
+    user-select:all;
+}
+
+.select-auto{
+    user-select:auto;
+}
