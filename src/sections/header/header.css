@@ -1,170 +1,53 @@
-.header{
-
-width:100%;
-
-background:var(--color-background-primary);
-
-padding:40px 100px 20px;
-
-box-shadow:var(--shadow-header);
-
-position:sticky;
-
-top:0;
-
-left:0;
-
-z-index:1000;
-
-transition:var(--transition-base);
-
+.header {
+    width: 100%;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.header__container{
-
-max-width:1440px;
-
-margin:auto;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:flex-end;
-
-gap:var(--space-24);
-
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 88px;
+    gap: var(--space-6);
 }
 
-.header__brand img{
-
-display:block;
-
-height:auto;
-
+.header__brand {
+    display: flex;
+    align-items: center;
 }
 
-.header__nav{
-
-display:flex;
-
-gap:24px;
-
-align-items:flex-end;
-
+.header__logo {
+    max-height: 60px;
+    width: auto;
 }
 
-.header__nav a{
-
-font-family:var(--font-secondary);
-
-font-size:var(--fs-sm);
-
-font-weight:var(--fw-semibold);
-
-text-decoration:none;
-
-color:var(--color-text-primary);
-
-transition:var(--transition-fast);
-
+.header__navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.header__nav a:hover{
-
-color:var(--color-hover);
-
+.header__menu {
+    display: flex;
+    gap: var(--space-6);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.header__actions{
-
-display:flex;
-
-align-items:center;
-
-gap:var(--space-16);
-
+.header__menu a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
 }
 
-.theme-toggle,
-.menu-toggle{
-
-display:none;
-
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
 }
 
-.header__divider{
-
-width:100%;
-
-margin-top:var(--space-8);
-
-padding-top:1px;
-
-border-top:1px solid var(--color-border);
-
-display:flex;
-
-justify-content:center;
-
-}
-
-.header__divider span{
-
-display:block;
-
-width:34px;
-
-height:5px;
-
-background:var(--color-border);
-
-}
-
-
-/*==========================
-TABLET
-==========================*/
-
-@media(max-width:834px){
-
-.header{
-
-padding:40px 24px 20px;
-
-}
-
-.header__nav{
-
-display:none;
-
-}
-
-.menu-toggle{
-
-display:block;
-
-}
-
-}
-
-
-/*==========================
-MOBILE
-==========================*/
-
-@media(max-width:402px){
-
-.header{
-
-padding:40px 24px 20px;
-
-}
-
-.theme-toggle{
-
-display:block;
-
-}
-
+.header__hamburger {
+    display: none;
 }

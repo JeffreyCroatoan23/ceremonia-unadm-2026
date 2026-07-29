@@ -4,7 +4,6 @@ Main Stylesheet
 
 Description:
 Main entry point for the Frontend Kit.
-This file orchestrates the loading order of all CSS layers.
 
 Load Order
 
@@ -13,6 +12,55 @@ Load Order
 3. Utilities
 4. Components
 5. Themes
+6. Sections
 
 Version: 1.0
 ======================================================*/
+
+
+/*======================================================
+= FOUNDATION
+======================================================*/
+
+@import "./foundation/index.css";
+
+
+/*======================================================
+= LAYOUT
+======================================================*/
+
+@import "./layout/index.css";
+
+
+/*======================================================
+= UTILITIES
+======================================================*/
+
+@import "./utilities/index.css";
+
+
+/*======================================================
+= COMPONENTS
+======================================================*/
+
+@import "./components/index.css";
+
+
+/*======================================================
+= THEMES
+======================================================*/
+
+@import "./themes/light.css";
+
+/*
+@import "./themes/dark.css";
+*/
+
+
+/*======================================================
+= SECTIONS
+======================================================*/
+
+@import "../sections/header/header.css";
+@import "../sections/hero/hero.css";
+@import "../sections/footer/footer.css";
