@@ -1,0 +1,196 @@
+/*======================================================
+ Visibility Utilities
+ Frontend Kit UnADM
+
+ Description:
+ Utility classes for visual behavior and rendering.
+
+ Responsibilities:
+ - Overflow
+ - Opacity
+ - Object Fit
+ - Object Position
+ - Cursor
+ - Resize
+ - Aspect Ratio
+
+ Dependencies:
+ None
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                     OVERFLOW                         =
+======================================================*/
+
+.overflow-auto{
+    overflow:auto;
+}
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.overflow-visible{
+    overflow:visible;
+}
+
+.overflow-scroll{
+    overflow:scroll;
+}
+
+.overflow-x-auto{
+    overflow-x:auto;
+}
+
+.overflow-y-auto{
+    overflow-y:auto;
+}
+
+
+/*======================================================
+=                      OPACITY                         =
+======================================================*/
+
+.opacity-0{
+    opacity:0;
+}
+
+.opacity-25{
+    opacity:.25;
+}
+
+.opacity-50{
+    opacity:.5;
+}
+
+.opacity-75{
+    opacity:.75;
+}
+
+.opacity-100{
+    opacity:1;
+}
+
+
+/*======================================================
+=                   OBJECT FIT                         =
+======================================================*/
+
+.object-contain{
+    object-fit:contain;
+}
+
+.object-cover{
+    object-fit:cover;
+}
+
+.object-fill{
+    object-fit:fill;
+}
+
+.object-none{
+    object-fit:none;
+}
+
+.object-scale-down{
+    object-fit:scale-down;
+}
+
+
+/*======================================================
+=                OBJECT POSITION                       =
+======================================================*/
+
+.object-center{
+    object-position:center;
+}
+
+.object-top{
+    object-position:top;
+}
+
+.object-right{
+    object-position:right;
+}
+
+.object-bottom{
+    object-position:bottom;
+}
+
+.object-left{
+    object-position:left;
+}
+
+
+/*======================================================
+=                      CURSOR                          =
+======================================================*/
+
+.cursor-auto{
+    cursor:auto;
+}
+
+.cursor-default{
+    cursor:default;
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+.cursor-wait{
+    cursor:wait;
+}
+
+.cursor-text{
+    cursor:text;
+}
+
+.cursor-move{
+    cursor:move;
+}
+
+.cursor-not-allowed{
+    cursor:not-allowed;
+}
+
+
+/*======================================================
+=                      RESIZE                          =
+======================================================*/
+
+.resize-none{
+    resize:none;
+}
+
+.resize{
+    resize:both;
+}
+
+.resize-x{
+    resize:horizontal;
+}
+
+.resize-y{
+    resize:vertical;
+}
+
+
+/*======================================================
+=                  ASPECT RATIO                        =
+======================================================*/
+
+.aspect-auto{
+    aspect-ratio:auto;
+}
+
+.aspect-square{
+    aspect-ratio:1 / 1;
+}
+
+.aspect-video{
+    aspect-ratio:16 / 9;
+}
