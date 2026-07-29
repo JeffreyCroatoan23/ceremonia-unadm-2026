@@ -1,0 +1,325 @@
+/*======================================================
+ Flex Utilities
+ Frontend Kit UnADM
+
+ Description:
+ Utility classes for Flexbox layouts.
+
+ Responsibilities:
+ - Flex display
+ - Direction
+ - Wrapping
+ - Alignment
+ - Grow / Shrink
+ - Gap utilities
+ - Order utilities
+
+ Dependencies:
+ foundation/tokens.css
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                  DISPLAY FLEX                        =
+======================================================*/
+
+.flex{
+    display:flex;
+}
+
+.inline-flex{
+    display:inline-flex;
+}
+
+
+/*======================================================
+=                 FLEX DIRECTION                       =
+======================================================*/
+
+.flex-row{
+    flex-direction:row;
+}
+
+.flex-row-reverse{
+    flex-direction:row-reverse;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-column-reverse{
+    flex-direction:column-reverse;
+}
+
+
+/*======================================================
+=                    FLEX WRAP                         =
+======================================================*/
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.flex-nowrap{
+    flex-wrap:nowrap;
+}
+
+.flex-wrap-reverse{
+    flex-wrap:wrap-reverse;
+}
+
+
+/*======================================================
+=                JUSTIFY CONTENT                       =
+======================================================*/
+
+.justify-start{
+    justify-content:flex-start;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-end{
+    justify-content:flex-end;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.justify-around{
+    justify-content:space-around;
+}
+
+.justify-evenly{
+    justify-content:space-evenly;
+}
+
+
+/*======================================================
+=                  ALIGN ITEMS                         =
+======================================================*/
+
+.items-start{
+    align-items:flex-start;
+}
+
+.items-center{
+    align-items:center;
+}
+
+.items-end{
+    align-items:flex-end;
+}
+
+.items-stretch{
+    align-items:stretch;
+}
+
+.items-baseline{
+    align-items:baseline;
+}
+
+
+/*======================================================
+=                 ALIGN CONTENT                        =
+======================================================*/
+
+.content-start{
+    align-content:flex-start;
+}
+
+.content-center{
+    align-content:center;
+}
+
+.content-end{
+    align-content:flex-end;
+}
+
+.content-between{
+    align-content:space-between;
+}
+
+.content-around{
+    align-content:space-around;
+}
+
+.content-evenly{
+    align-content:space-evenly;
+}
+
+.content-stretch{
+    align-content:stretch;
+}
+
+
+/*======================================================
+=                  ALIGN SELF                          =
+======================================================*/
+
+.self-auto{
+    align-self:auto;
+}
+
+.self-start{
+    align-self:flex-start;
+}
+
+.self-center{
+    align-self:center;
+}
+
+.self-end{
+    align-self:flex-end;
+}
+
+.self-stretch{
+    align-self:stretch;
+}
+
+.self-baseline{
+    align-self:baseline;
+}
+
+
+/*======================================================
+=                  FLEX GROW                           =
+======================================================*/
+
+.flex-grow{
+    flex-grow:1;
+}
+
+.flex-grow-0{
+    flex-grow:0;
+}
+
+
+/*======================================================
+=                 FLEX SHRINK                          =
+======================================================*/
+
+.flex-shrink{
+    flex-shrink:1;
+}
+
+.flex-shrink-0{
+    flex-shrink:0;
+}
+
+
+/*======================================================
+=                  FLEX FILL                           =
+======================================================*/
+
+.flex-1{
+    flex:1 1 0%;
+}
+
+.flex-auto{
+    flex:1 1 auto;
+}
+
+.flex-none{
+    flex:none;
+}
+
+
+/*======================================================
+=                     ORDER                            =
+======================================================*/
+
+.order-first{
+    order:-1;
+}
+
+.order-last{
+    order:999;
+}
+
+.order-none{
+    order:0;
+}
+
+.order-1{order:1;}
+.order-2{order:2;}
+.order-3{order:3;}
+.order-4{order:4;}
+.order-5{order:5;}
+
+
+/*======================================================
+=                      GAP                             =
+======================================================*/
+
+.gap-0{
+    gap:0;
+}
+
+.gap-1{
+    gap:var(--space-1);
+}
+
+.gap-2{
+    gap:var(--space-2);
+}
+
+.gap-3{
+    gap:var(--space-3);
+}
+
+.gap-4{
+    gap:var(--space-4);
+}
+
+.gap-5{
+    gap:var(--space-5);
+}
+
+.gap-6{
+    gap:var(--space-6);
+}
+
+.gap-8{
+    gap:var(--space-8);
+}
+
+.gap-10{
+    gap:var(--space-10);
+}
+
+.gap-12{
+    gap:var(--space-12);
+}
+
+
+/*======================================================
+=                    ROW GAP                           =
+======================================================*/
+
+.row-gap-1{row-gap:var(--space-1);}
+.row-gap-2{row-gap:var(--space-2);}
+.row-gap-3{row-gap:var(--space-3);}
+.row-gap-4{row-gap:var(--space-4);}
+.row-gap-5{row-gap:var(--space-5);}
+.row-gap-6{row-gap:var(--space-6);}
+.row-gap-8{row-gap:var(--space-8);}
+
+
+/*======================================================
+=                 COLUMN GAP                           =
+======================================================*/
+
+.column-gap-1{column-gap:var(--space-1);}
+.column-gap-2{column-gap:var(--space-2);}
+.column-gap-3{column-gap:var(--space-3);}
+.column-gap-4{column-gap:var(--space-4);}
+.column-gap-5{column-gap:var(--space-5);}
+.column-gap-6{column-gap:var(--space-6);}
+.column-gap-8{column-gap:var(--space-8);}
