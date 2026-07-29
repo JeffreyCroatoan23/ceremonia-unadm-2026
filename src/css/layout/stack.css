@@ -1,0 +1,190 @@
+/*======================================================
+ Stack Layout
+ Frontend Kit UnADM
+
+ Description:
+ Vertical flow layout for stacking elements with
+ consistent spacing.
+
+ Responsibilities:
+ - Vertical spacing between siblings
+ - Configurable spacing scale
+ - Alignment helpers
+ - Stretch support
+
+ Dependencies:
+ foundation/tokens.css
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                    BASE STACK                        =
+======================================================*/
+
+.stack{
+
+    --stack-space:var(--space-6);
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/*======================================================
+=               STACK SPACING SYSTEM                   =
+======================================================*/
+
+.stack > * + *{
+
+    margin-block-start:var(--stack-space);
+
+}
+
+
+/*======================================================
+=                 STACK SIZES                          =
+======================================================*/
+
+.stack-xs{
+
+    --stack-space:var(--space-2);
+
+}
+
+.stack-sm{
+
+    --stack-space:var(--space-4);
+
+}
+
+.stack-md{
+
+    --stack-space:var(--space-6);
+
+}
+
+.stack-lg{
+
+    --stack-space:var(--space-10);
+
+}
+
+.stack-xl{
+
+    --stack-space:var(--space-16);
+
+}
+
+.stack-2xl{
+
+    --stack-space:var(--space-24);
+
+}
+
+
+/*======================================================
+=                 ALIGNMENT HELPERS                    =
+======================================================*/
+
+.stack-start{
+
+    align-items:flex-start;
+
+}
+
+.stack-center{
+
+    align-items:center;
+
+}
+
+.stack-end{
+
+    align-items:flex-end;
+
+}
+
+.stack-stretch{
+
+    align-items:stretch;
+
+}
+
+
+/*======================================================
+=               JUSTIFY HELPERS                        =
+======================================================*/
+
+.stack-top{
+
+    justify-content:flex-start;
+
+}
+
+.stack-middle{
+
+    justify-content:center;
+
+}
+
+.stack-bottom{
+
+    justify-content:flex-end;
+
+}
+
+.stack-between{
+
+    justify-content:space-between;
+
+}
+
+
+/*======================================================
+=                  GROW UTILITIES                      =
+======================================================*/
+
+.stack-fill{
+
+    flex:1 1 auto;
+
+}
+
+
+/*======================================================
+=                 RESPONSIVE HELPERS                   =
+======================================================*/
+
+@media (min-width:768px){
+
+    .stack{
+
+        --stack-space:var(--space-8);
+
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .stack{
+
+        --stack-space:var(--space-10);
+
+    }
+
+}
+
+@media (min-width:1280px){
+
+    .stack{
+
+        --stack-space:var(--space-12);
+
+    }
+
+}
