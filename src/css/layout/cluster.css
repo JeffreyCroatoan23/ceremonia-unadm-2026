@@ -1,0 +1,206 @@
+/*======================================================
+ Cluster Layout
+ Frontend Kit UnADM
+
+ Description:
+ Horizontal flow layout for grouping related elements.
+
+ Responsibilities:
+ - Horizontal spacing
+ - Automatic wrapping
+ - Horizontal alignment
+ - Vertical alignment
+ - Responsive spacing
+
+ Dependencies:
+ foundation/tokens.css
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                  BASE CLUSTER                        =
+======================================================*/
+
+.cluster{
+
+    --cluster-space:var(--space-4);
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:var(--cluster-space);
+
+    align-items:center;
+
+}
+
+
+/*======================================================
+=                 CLUSTER SIZES                        =
+======================================================*/
+
+.cluster-xs{
+
+    --cluster-space:var(--space-2);
+
+}
+
+.cluster-sm{
+
+    --cluster-space:var(--space-3);
+
+}
+
+.cluster-md{
+
+    --cluster-space:var(--space-4);
+
+}
+
+.cluster-lg{
+
+    --cluster-space:var(--space-6);
+
+}
+
+.cluster-xl{
+
+    --cluster-space:var(--space-8);
+
+}
+
+.cluster-2xl{
+
+    --cluster-space:var(--space-12);
+
+}
+
+
+/*======================================================
+=               HORIZONTAL ALIGNMENT                   =
+======================================================*/
+
+.cluster-start{
+
+    justify-content:flex-start;
+
+}
+
+.cluster-center{
+
+    justify-content:center;
+
+}
+
+.cluster-end{
+
+    justify-content:flex-end;
+
+}
+
+.cluster-between{
+
+    justify-content:space-between;
+
+}
+
+.cluster-around{
+
+    justify-content:space-around;
+
+}
+
+.cluster-evenly{
+
+    justify-content:space-evenly;
+
+}
+
+
+/*======================================================
+=                VERTICAL ALIGNMENT                    =
+======================================================*/
+
+.cluster-top{
+
+    align-items:flex-start;
+
+}
+
+.cluster-middle{
+
+    align-items:center;
+
+}
+
+.cluster-bottom{
+
+    align-items:flex-end;
+
+}
+
+.cluster-stretch{
+
+    align-items:stretch;
+
+}
+
+
+/*======================================================
+=                 NO WRAP OPTION                       =
+======================================================*/
+
+.cluster-nowrap{
+
+    flex-wrap:nowrap;
+
+}
+
+
+/*======================================================
+=                 FILL AVAILABLE SPACE                 =
+======================================================*/
+
+.cluster-fill{
+
+    width:100%;
+
+}
+
+
+/*======================================================
+=              RESPONSIVE SPACING                      =
+======================================================*/
+
+@media (min-width:768px){
+
+    .cluster{
+
+        --cluster-space:var(--space-5);
+
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .cluster{
+
+        --cluster-space:var(--space-6);
+
+    }
+
+}
+
+@media (min-width:1280px){
+
+    .cluster{
+
+        --cluster-space:var(--space-8);
+
+    }
+
+}
