@@ -1,0 +1,182 @@
+/*======================================================
+ Section Layout
+ Frontend Kit UnADM
+
+ Description:
+ Responsive vertical spacing system for page sections.
+
+ Responsibilities:
+ - Vertical spacing
+ - Consistent rhythm
+ - Full viewport sections
+ - Background helper variants
+
+ Dependencies:
+ foundation/tokens.css
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                    BASE SECTION                      =
+======================================================*/
+
+.section{
+
+    position:relative;
+
+    width:100%;
+
+    padding-block:var(--space-16);
+
+}
+
+
+/*======================================================
+=                  SECTION SIZES                       =
+======================================================*/
+
+.section-xs{
+
+    padding-block:var(--space-6);
+
+}
+
+.section-sm{
+
+    padding-block:var(--space-8);
+
+}
+
+.section-md{
+
+    padding-block:var(--space-12);
+
+}
+
+.section-lg{
+
+    padding-block:var(--space-20);
+
+}
+
+.section-xl{
+
+    padding-block:var(--space-24);
+
+}
+
+
+/*======================================================
+=                  FULL HEIGHT                         =
+======================================================*/
+
+.section-full{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+/*======================================================
+=                BACKGROUND HELPERS                    =
+======================================================*/
+
+.section-primary{
+
+    background:var(--color-background-primary);
+
+}
+
+.section-secondary{
+
+    background:var(--color-background-secondary);
+
+}
+
+.section-tertiary{
+
+    background:var(--color-background-tertiary);
+
+    color:var(--color-text-inverse);
+
+}
+
+.section-accent{
+
+    background:var(--color-background-accent);
+
+    color:var(--color-text-inverse);
+
+}
+
+.section-soft{
+
+    background:var(--color-background-soft);
+
+}
+
+
+/*======================================================
+=                BORDER HELPERS                        =
+======================================================*/
+
+.section-border-top{
+
+    border-top:var(--border-width-xs) solid var(--color-border);
+
+}
+
+.section-border-bottom{
+
+    border-bottom:var(--border-width-xs) solid var(--color-border);
+
+}
+
+
+/*======================================================
+=                RESPONSIVE SPACING                    =
+======================================================*/
+
+/* Tablet */
+
+@media (min-width:768px){
+
+    .section{
+
+        padding-block:var(--space-20);
+
+    }
+
+}
+
+
+/* Laptop */
+
+@media (min-width:1024px){
+
+    .section{
+
+        padding-block:var(--space-24);
+
+    }
+
+}
+
+
+/* Desktop */
+
+@media (min-width:1280px){
+
+    .section{
+
+        padding-block:var(--space-32);
+
+    }
+
+}
