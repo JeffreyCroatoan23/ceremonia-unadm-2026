@@ -1,224 +1,300 @@
 /*======================================================
  CEREMONIA DE TITULACIÓN UnADM 2026
- Design Tokens
- Version 2.0
+ Design System Tokens
+ Version 3.0
 ======================================================*/
 
 :root{
 
-/*======================================
-=            BRAND COLORS             =
-======================================*/
+/*======================================================
+=                     BRAND COLORS                     =
+======================================================*/
 
 --color-primary:#1E5C50;
+--color-primary-light:#2E7A6B;
+--color-primary-dark:#15453C;
+
 --color-secondary:#A47F2B;
+--color-secondary-light:#C8A44B;
+--color-secondary-dark:#7C6020;
 
 
-/*======================================
-=            BACKGROUNDS              =
-======================================*/
+/*======================================================
+=                    NEUTRAL COLORS                    =
+======================================================*/
+
+--color-white:#FFFEFA;
+
+--color-black:#121A17;
+
+--color-gray-100:#F6F6F3;
+--color-gray-200:#ECECE8;
+--color-gray-300:#D9D9D2;
+--color-gray-400:#BDBDB4;
+--color-gray-500:#909088;
+--color-gray-600:#6E6E66;
+--color-gray-700:#4B4B46;
+--color-gray-800:#2F2F2B;
+
+
+/*======================================================
+=                  SEMANTIC COLORS                     =
+======================================================*/
+
+--color-success:#2E7D32;
+--color-warning:#ED6C02;
+--color-error:#D32F2F;
+--color-info:#1976D2;
+
+
+/*======================================================
+=                    BACKGROUNDS                       =
+======================================================*/
 
 --color-background-primary:#FFFEFA;
-
 --color-background-secondary:rgba(229,208,147,.24);
-
 --color-background-tertiary:#1E5C50;
-
 --color-background-accent:#A47F2B;
-
 --color-background-soft:rgba(229,208,147,.10);
 
 
-/*======================================
-=              SURFACES               =
-======================================*/
+/*======================================================
+=                     SURFACES                         =
+======================================================*/
 
 --color-surface-light:rgba(30,92,80,.10);
-
 --color-surface-medium:rgba(30,92,80,.20);
+--color-surface-dark:#15453C;
 
 
-/*======================================
-=               TEXT                  =
-======================================*/
+/*======================================================
+=                        TEXT                          =
+======================================================*/
 
 --color-text-primary:#121A17;
-
+--color-text-secondary:#4B4B46;
+--color-text-muted:#6E6E66;
 --color-text-inverse:#FFFEFA;
 
 --color-link:var(--color-primary);
+--color-hover:var(--color-secondary);
 
---color-hover:#A47F2B;
 
-
-/*======================================
-=               BORDER                =
-======================================*/
+/*======================================================
+=                       BORDERS                        =
+======================================================*/
 
 --color-border:#E5D093;
 
-
-/*======================================
-=               STATUS                =
-======================================*/
-
---color-success:#2E7D32;
-
---color-warning:#ED6C02;
-
---color-error:#D32F2F;
+--border-width-xs:1px;
+--border-width-sm:2px;
+--border-width-md:4px;
 
 
-/*======================================
-=              TYPOGRAPHY             =
-======================================*/
+/*======================================================
+=                     TYPOGRAPHY                       =
+======================================================*/
 
---font-primary:"Patria",serif;
-
---font-heading:"Patria",serif;
-
---font-secondary:"Noto Sans",sans-serif;
+--font-primary:"Patria", serif;
+--font-heading:"Patria", serif;
+--font-secondary:"Noto Sans", sans-serif;
 
 
-/*======================================
-=         DESKTOP FONT SIZE           =
-======================================*/
+/*======================================================
+=                     FONT SIZE                        =
+======================================================*/
 
---fs-xs:18px;
-
---fs-sm:20px;
-
+--fs-2xs:12px;
+--fs-xs:14px;
+--fs-sm:16px;
+--fs-md:18px;
 --fs-base:20px;
-
---fs-lg:32px;
-
---fs-xl:128px;
-
-
-/*======================================
-=          LINE HEIGHT                =
-======================================*/
-
---lh-base:24px;
+--fs-lg:24px;
+--fs-xl:32px;
+--fs-2xl:40px;
+--fs-3xl:56px;
+--fs-4xl:72px;
+--fs-display:128px;
 
 
-/*======================================
-=          FONT WEIGHTS               =
-======================================*/
+/*======================================================
+=                    LINE HEIGHT                       =
+======================================================*/
+
+--lh-tight:1.1;
+--lh-heading:1.2;
+--lh-base:1.5;
+--lh-relaxed:1.75;
+--lh-loose:2;
+
+
+/*======================================================
+=                   FONT WEIGHTS                       =
+======================================================*/
 
 --fw-thin:100;
-
 --fw-light:300;
-
 --fw-regular:400;
-
 --fw-medium:500;
-
 --fw-semibold:600;
-
 --fw-bold:700;
 
 
-/*======================================
-=            SPACING                  =
-======================================*/
+/*======================================================
+=                      SPACING                         =
+======================================================*/
 
---space-4:4px;
-
---space-8:8px;
-
---space-12:12px;
-
---space-16:16px;
-
---space-20:20px;
-
---space-24:24px;
-
---space-32:32px;
-
---space-40:40px;
-
---space-48:48px;
-
---space-64:64px;
-
---space-80:80px;
-
---space-96:96px;
-
---space-120:120px;
-
---space-160:160px;
+--space-0:0;
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-10:40px;
+--space-12:48px;
+--space-16:64px;
+--space-20:80px;
+--space-24:96px;
+--space-32:128px;
+--space-40:160px;
 
 
-/*======================================
-=            GRID                     =
-======================================*/
+/*======================================================
+=                     CONTAINERS                       =
+======================================================*/
 
---container-desktop:1440px;
+--container-xs:402px;
+--container-sm:834px;
+--container-lg:1200px;
+--container-xl:1440px;
 
---container-tablet:834px;
 
---container-mobile:402px;
+/*======================================================
+=                        GRID                          =
+======================================================*/
 
 --columns-desktop:12;
-
---columns-tablet:4;
-
+--columns-tablet:8;
 --columns-mobile:4;
 
---gutter-desktop:20px;
-
+--gutter-desktop:24px;
+--gutter-tablet:20px;
 --gutter-mobile:16px;
 
 
-/*======================================
-=          BORDER RADIUS              =
-======================================*/
+/*======================================================
+=                    BREAKPOINTS                       =
+======================================================*/
 
---radius-sm:2px;
+--bp-mobile:480px;
+--bp-tablet:768px;
+--bp-laptop:1024px;
+--bp-desktop:1280px;
+--bp-wide:1440px;
 
---radius-md:4px;
 
+/*======================================================
+=                   BORDER RADIUS                      =
+======================================================*/
+
+--radius-none:0;
+--radius-xs:2px;
+--radius-sm:4px;
+--radius-md:8px;
 --radius-lg:16px;
-
+--radius-xl:24px;
 --radius-full:9999px;
 
 
-/*======================================
-=             SHADOW                  =
-======================================*/
+/*======================================================
+=                      SHADOWS                         =
+======================================================*/
+
+--shadow-xs:0 1px 2px rgba(0,0,0,.06);
+
+--shadow-sm:0 2px 8px rgba(30,92,80,.08);
+
+--shadow-md:0 4px 24px rgba(30,92,80,.10);
+
+--shadow-lg:0 8px 48px rgba(30,92,80,.14);
 
 --shadow-header:0 4px 32px rgba(30,92,80,.08);
 
 
-/*======================================
-=          TRANSITIONS                =
-======================================*/
+/*======================================================
+=                     OPACITY                          =
+======================================================*/
 
---transition-fast:.25s ease;
+--opacity-disabled:.40;
+--opacity-hover:.80;
+--opacity-overlay:.60;
 
---transition-base:.8s cubic-bezier(.25,.1,.25,1);
 
---transition-slow:1.2s ease;
+/*======================================================
+=                     MOTION                           =
+======================================================*/
+
+--duration-fast:150ms;
+--duration-base:300ms;
+--duration-slow:600ms;
+
+--easing-standard:ease;
+--easing-emphasized:cubic-bezier(.25,.1,.25,1);
+
+--transition-fast:
+all var(--duration-fast) var(--easing-standard);
+
+--transition-base:
+all var(--duration-base) var(--easing-emphasized);
+
+--transition-slow:
+all var(--duration-slow) var(--easing-standard);
+
+
+/*======================================================
+=                     Z-INDEX                          =
+======================================================*/
+
+--z-base:1;
+--z-dropdown:100;
+--z-sticky:200;
+--z-fixed:300;
+--z-modal:500;
+--z-toast:700;
+--z-tooltip:900;
 
 }
 
 
-/*======================================
-=            DARK THEME               =
-======================================*/
+/*======================================================
+=                    DARK THEME                        =
+======================================================*/
 
 [data-theme="dark"]{
 
 --color-background-primary:#121A17;
 
+--color-background-secondary:#1B2420;
+
 --color-background-tertiary:#0F1513;
+
+--color-background-accent:#70561F;
 
 --color-background-soft:rgba(255,255,255,.05);
 
+--color-surface-light:rgba(255,255,255,.05);
+
+--color-surface-medium:rgba(255,255,255,.10);
+
+--color-surface-dark:#1B2420;
+
 --color-text-primary:#FFFEFA;
+
+--color-text-secondary:#ECECE8;
+
+--color-text-muted:#CFCFC6;
 
 --color-border:#70561F;
 

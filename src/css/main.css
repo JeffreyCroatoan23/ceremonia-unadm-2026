@@ -1,0 +1,18 @@
+/*======================================================
+Frontend Kit UnADM
+Main Stylesheet
+
+Description:
+Main entry point for the Frontend Kit.
+This file orchestrates the loading order of all CSS layers.
+
+Load Order
+
+1. Foundation
+2. Layout
+3. Utilities
+4. Components
+5. Themes
+
+Version: 1.0
+======================================================*/
