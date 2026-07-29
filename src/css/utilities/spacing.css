@@ -1,0 +1,159 @@
+/*======================================================
+ Spacing Utilities
+ Frontend Kit UnADM
+
+ Description:
+ Utility classes for margin and padding.
+
+ Responsibilities:
+ - Margin utilities
+ - Padding utilities
+ - Axis utilities
+ - Direction utilities
+
+ Dependencies:
+ foundation/tokens.css
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                     MARGIN                           =
+======================================================*/
+
+.m-0{margin:0;}
+
+.m-1{margin:var(--space-1);}
+.m-2{margin:var(--space-2);}
+.m-3{margin:var(--space-3);}
+.m-4{margin:var(--space-4);}
+.m-5{margin:var(--space-5);}
+.m-6{margin:var(--space-6);}
+.m-8{margin:var(--space-8);}
+.m-10{margin:var(--space-10);}
+.m-12{margin:var(--space-12);}
+.m-16{margin:var(--space-16);}
+.m-20{margin:var(--space-20);}
+.m-24{margin:var(--space-24);}
+.m-auto{margin:auto;}
+
+
+/*======================================================
+=                  MARGIN X                            =
+======================================================*/
+
+.mx-auto{
+
+    margin-inline:auto;
+
+}
+
+.mx-0{margin-inline:0;}
+.mx-1{margin-inline:var(--space-1);}
+.mx-2{margin-inline:var(--space-2);}
+.mx-3{margin-inline:var(--space-3);}
+.mx-4{margin-inline:var(--space-4);}
+.mx-5{margin-inline:var(--space-5);}
+.mx-6{margin-inline:var(--space-6);}
+.mx-8{margin-inline:var(--space-8);}
+.mx-10{margin-inline:var(--space-10);}
+.mx-12{margin-inline:var(--space-12);}
+
+
+/*======================================================
+=                  MARGIN Y                            =
+======================================================*/
+
+.my-0{margin-block:0;}
+.my-1{margin-block:var(--space-1);}
+.my-2{margin-block:var(--space-2);}
+.my-3{margin-block:var(--space-3);}
+.my-4{margin-block:var(--space-4);}
+.my-5{margin-block:var(--space-5);}
+.my-6{margin-block:var(--space-6);}
+.my-8{margin-block:var(--space-8);}
+.my-10{margin-block:var(--space-10);}
+.my-12{margin-block:var(--space-12);}
+
+
+/*======================================================
+=               INDIVIDUAL MARGINS                     =
+======================================================*/
+
+.mt-0{margin-top:0;}
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+.mt-6{margin-top:var(--space-6);}
+.mt-8{margin-top:var(--space-8);}
+.mt-10{margin-top:var(--space-10);}
+.mt-12{margin-top:var(--space-12);}
+
+.mb-0{margin-bottom:0;}
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+.mb-6{margin-bottom:var(--space-6);}
+.mb-8{margin-bottom:var(--space-8);}
+.mb-10{margin-bottom:var(--space-10);}
+.mb-12{margin-bottom:var(--space-12);}
+
+.ml-auto{margin-left:auto;}
+.mr-auto{margin-right:auto;}
+
+
+/*======================================================
+=                     PADDING                          =
+======================================================*/
+
+.p-0{padding:0;}
+
+.p-1{padding:var(--space-1);}
+.p-2{padding:var(--space-2);}
+.p-3{padding:var(--space-3);}
+.p-4{padding:var(--space-4);}
+.p-5{padding:var(--space-5);}
+.p-6{padding:var(--space-6);}
+.p-8{padding:var(--space-8);}
+.p-10{padding:var(--space-10);}
+.p-12{padding:var(--space-12);}
+.p-16{padding:var(--space-16);}
+.p-20{padding:var(--space-20);}
+.p-24{padding:var(--space-24);}
+
+
+/*======================================================
+=                  PADDING X                           =
+======================================================*/
+
+.px-0{padding-inline:0;}
+.px-1{padding-inline:var(--space-1);}
+.px-2{padding-inline:var(--space-2);}
+.px-3{padding-inline:var(--space-3);}
+.px-4{padding-inline:var(--space-4);}
+.px-5{padding-inline:var(--space-5);}
+.px-6{padding-inline:var(--space-6);}
+.px-8{padding-inline:var(--space-8);}
+.px-10{padding-inline:var(--space-10);}
+.px-12{padding-inline:var(--space-12);}
+
+
+/*======================================================
+=                  PADDING Y                           =
+======================================================*/
+
+.py-0{padding-block:0;}
+.py-1{padding-block:var(--space-1);}
+.py-2{padding-block:var(--space-2);}
+.py-3{padding-block:var(--space-3);}
+.py-4{padding-block:var(--space-4);}
+.py-5{padding-block:var(--space-5);}
+.py-6{padding-block:var(--space-6);}
+.py-8{padding-block:var(--space-8);}
+.py-10{padding-block:var(--space-10);}
+.py-12{padding-block:var(--space-12);}
