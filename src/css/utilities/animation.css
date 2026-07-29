@@ -1,0 +1,327 @@
+/*======================================================
+ Animation Utilities
+ Frontend Kit UnADM
+
+ Description:
+ Utility classes for transitions, animations and motion.
+
+ Responsibilities:
+ - Transition properties
+ - Transition duration
+ - Transition delay
+ - Timing functions
+ - Transform helpers
+ - Basic reusable animations
+
+ Dependencies:
+ foundation/tokens.css
+
+ Version: 1.0
+======================================================*/
+
+
+/*======================================================
+=                 TRANSITION PROPERTY                  =
+======================================================*/
+
+.transition{
+    transition:all var(--duration-normal) var(--ease-standard);
+}
+
+.transition-none{
+    transition:none;
+}
+
+.transition-colors{
+    transition:
+        color var(--duration-normal) var(--ease-standard),
+        background-color var(--duration-normal) var(--ease-standard),
+        border-color var(--duration-normal) var(--ease-standard);
+}
+
+.transition-opacity{
+    transition:
+        opacity var(--duration-normal) var(--ease-standard);
+}
+
+.transition-transform{
+    transition:
+        transform var(--duration-normal) var(--ease-standard);
+}
+
+.transition-shadow{
+    transition:
+        box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+
+/*======================================================
+=                 TRANSITION DURATION                  =
+======================================================*/
+
+.duration-fast{
+    transition-duration:var(--duration-fast);
+}
+
+.duration-normal{
+    transition-duration:var(--duration-normal);
+}
+
+.duration-slow{
+    transition-duration:var(--duration-slow);
+}
+
+
+/*======================================================
+=                  TRANSITION DELAY                    =
+======================================================*/
+
+.delay-0{
+    transition-delay:0ms;
+}
+
+.delay-100{
+    transition-delay:100ms;
+}
+
+.delay-200{
+    transition-delay:200ms;
+}
+
+.delay-300{
+    transition-delay:300ms;
+}
+
+.delay-500{
+    transition-delay:500ms;
+}
+
+
+/*======================================================
+=                   TIMING FUNCTION                    =
+======================================================*/
+
+.ease-linear{
+    transition-timing-function:linear;
+}
+
+.ease-in{
+    transition-timing-function:ease-in;
+}
+
+.ease-out{
+    transition-timing-function:ease-out;
+}
+
+.ease-in-out{
+    transition-timing-function:ease-in-out;
+}
+
+.ease-standard{
+    transition-timing-function:var(--ease-standard);
+}
+
+
+/*======================================================
+=                 TRANSFORM HELPERS                    =
+======================================================*/
+
+.scale-90{
+    transform:scale(.9);
+}
+
+.scale-95{
+    transform:scale(.95);
+}
+
+.scale-100{
+    transform:scale(1);
+}
+
+.scale-105{
+    transform:scale(1.05);
+}
+
+.scale-110{
+    transform:scale(1.10);
+}
+
+
+.rotate-0{
+    transform:rotate(0deg);
+}
+
+.rotate-45{
+    transform:rotate(45deg);
+}
+
+.rotate-90{
+    transform:rotate(90deg);
+}
+
+.rotate-180{
+    transform:rotate(180deg);
+}
+
+
+.translate-center{
+    transform:translate(-50%, -50%);
+}
+
+
+/*======================================================
+=                  KEYFRAME ANIMATIONS                 =
+======================================================*/
+
+@keyframes fade-in{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes fade-out{
+
+    from{
+        opacity:1;
+    }
+
+    to{
+        opacity:0;
+    }
+
+}
+
+@keyframes slide-up{
+
+    from{
+        opacity:0;
+        transform:translateY(24px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes slide-down{
+
+    from{
+        opacity:0;
+        transform:translateY(-24px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes zoom-in{
+
+    from{
+        opacity:0;
+        transform:scale(.92);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@keyframes spin{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+
+/*======================================================
+=                ANIMATION UTILITIES                   =
+======================================================*/
+
+.animate-fade-in{
+    animation:fade-in var(--duration-normal) var(--ease-standard);
+}
+
+.animate-fade-out{
+    animation:fade-out var(--duration-normal) var(--ease-standard);
+}
+
+.animate-slide-up{
+    animation:slide-up var(--duration-normal) var(--ease-standard);
+}
+
+.animate-slide-down{
+    animation:slide-down var(--duration-normal) var(--ease-standard);
+}
+
+.animate-zoom-in{
+    animation:zoom-in var(--duration-normal) var(--ease-standard);
+}
+
+.animate-spin{
+    animation:spin 1s linear infinite;
+}
+
+.animate-pulse{
+    animation:pulse 1.5s ease-in-out infinite;
+}
+
+
+/*======================================================
+=                ANIMATION FILL MODE                   =
+======================================================*/
+
+.fill-forwards{
+    animation-fill-mode:forwards;
+}
+
+.fill-backwards{
+    animation-fill-mode:backwards;
+}
+
+.fill-both{
+    animation-fill-mode:both;
+}
+
+
+/*======================================================
+=                ANIMATION ITERATION                   =
+======================================================*/
+
+.infinite{
+    animation-iteration-count:infinite;
+}
+
+.once{
+    animation-iteration-count:1;
+}
